@@ -41,10 +41,13 @@ function displayRepos(data) {
         let last_active = new Date(data[i]['updated_at']);
         let license = (data[i]['license'] != null) ? data[i]['license']['spdx_id']: 'None';
         let code_type = data[i]['language'];
-
+        let repo_tabs = repo_title;
+        if(repo_title === 'aliitani.github.io') {
+            repo_tabs = 'ali';
+        }
         repo_main.innerHTML += "<div class='col-lg-6'>" +
             "<div class='border border-info repo-div rounded'>" +
-                "<h3><a href='https://github.com/aliitani'>aliitani</a>/<a href=''>" + repo_title+ "</a></h3>" +
+                "<h3><a href='https://github.com/aliitani'>aliitani</a>/<a href='" + repo_link + "' target='_blank'>" + repo_title + "</a></h3>" +
                 "<div>" +
                     "<p>" + repo_description + "</p>" +
                 "</div>" +
@@ -67,20 +70,20 @@ function displayRepos(data) {
                     "</div>" +
                 "</div>" +
                 "<div>" +
-                    "<ul class='nav nav-tabs' id='" + data[i]['name'] + "' role='tablist'>" +
+                    "<ul class='nav nav-tabs' id='" + repo_tabs + "' role='tablist'>" +
                         "<li class='nav-item'>" +
-                            "<a class='nav-link active bg-dark text-light' id='" + data[i]['name'] + "-tab' data-toggle='tab' href='#" + data[i]['name'] + "1' role='tab' aria-controls='home' aria-selected='true'>HTTPS</a>" +
+                            "<a class='nav-link active bg-dark text-light' id='" + repo_tabs + "-tab' data-toggle='tab' href='#" + repo_tabs + "1' role='tab' aria-controls='" + repo_tabs + "1' aria-selected='true'>HTTPS</a>" +
                         "</li>" +
                         "<li class='nav-item'>" +
-                            "<a class='nav-link bg-info text-light' id='" + data[i]['name'] + "-tab' data-toggle='tab' href='#" + data[i]['name']+ "2' role='tab' aria-controls='profile' aria-selected='false'>SSH</a>" +
+                            "<a class='nav-link bg-info text-light' id='" + repo_tabs+ "-tab' data-toggle='tab' href='#" + repo_tabs + "2' role='tab' aria-controls='"+ repo_tabs + "2' aria-selected='false'>SSH</a>" +
                         "</li>" +
                     "</ul>" +
                 "</div>"+
                 "<div class='tab-content' id='myTabContent'>" +
-                    "<div class='tab-pane fade show active' id='" + data[i]['name'] + "1' role='tabpanel' aria-labelledby='" + data[i]['name']+ "-tab'>"+
+                    "<div class='tab-pane fade show active' id='" + repo_tabs + "1' role='tabpanel' aria-labelledby='" + repo_tabs + "-tab'>"+
                         "<p class='row clone-url bg-dark text-light'>" + clone_url + "</p>" +
                     "</div>" +
-                    "<div class='tab-pane fade' id='" + data[i]['name'] + "2' role='tabpanel' aria-labelledby='" + data[i]['name'] + "-tab'>" +
+                    "<div class='tab-pane fade' id='" + repo_tabs + "2' role='tabpanel' aria-labelledby='" + repo_tabs + "-tab'>" +
                         "<p class='row clone-url bg-info text-light'>" + ssh_url +"</p>"+
                     "</div>" +
                 "</div>" +
