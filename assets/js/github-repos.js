@@ -24,7 +24,6 @@ function displayRepos(data) {
     let repo_main = document.getElementById('repo_main');
     let total = document.getElementById('total_repos');
     total.innerHTML = "Total " + data.length;
-    console.log(data);
 
     for (let i = 0; i < data.length; i++) {
         let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
