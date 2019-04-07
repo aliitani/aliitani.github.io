@@ -1,5 +1,6 @@
 body {
     margin-top: 10em;
+	margin-bottom: 10em;
 }
 
 h1, h2, #profiles, #repo_main{
