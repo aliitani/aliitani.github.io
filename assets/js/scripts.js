@@ -9,6 +9,6 @@ function openLinks(url) {
 }
 
 function openProjects(url){
-    let links = ['https://overwatch-hero-database.com'];
+    let links = ['https://overwatch-hero-database.com/Heroes', 'https://github.com/aliitani/Traffic-Jam'];
     window.open(links[url], '_blank').focus();
 }
