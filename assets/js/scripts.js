@@ -4,7 +4,7 @@
 function openLinks(url) {
     let links = ['https://github.com/aliitani', 'https://www.linkedin.com/in/aliitani0/', 
     'https://angel.co/aliitani', '', 'https://medium.com/@aliitani0', 
-    'https://www.instagram.com/aliitani/', 'https://twitter.com/atomsoftworks', 'https://pme-math.org/'];
+    'https://www.instagram.com/aliitani/', 'https://twitter.com/atomsoftworks', 'https://pme-math.org/', './assets/itani.pdf'];
     window.open(links[url], '_blank').focus();
 }
 
