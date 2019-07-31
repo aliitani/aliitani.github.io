@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+p {
+    line-height: 30pt;
+}
+header {
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    background-color: bisque;
+    text-align: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding-top: 10em;
+}
+.parallax-1 h1 {
+    color: green;
+    text-align: center;
+}
+
+.parallax-1 {
+    /* The image used */
+    background-color:black;
+    /* Full height */
+    height: 100%;
+
+    /* Creates the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.parallax-2 {
+    /* The image used */
+    background-image: url('imgs/img1.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Creates the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-3 {
+    /* The image used */
+    background-image: url('imgs/img2.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Creates the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    height: fit-content;
+    padding: 1em;
+    background-color: beige;
+    font-size: 20px;
+}
+
+.content h2 {
+    text-align: center;
+
+}

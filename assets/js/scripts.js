@@ -9,6 +9,12 @@ function openLinks(url) {
 }
 
 function openProjects(url){
-    let links = ['https://overwatch-hero-database.com/Heroes', 'https://github.com/aliitani/Traffic-Jam', 'https://aliitani.github.io/cubes/'];
+    let links = [
+        'https://overwatch-hero-database.com/Heroes', 
+        'https://github.com/aliitani/Traffic-Jam', 
+        'https://aliitani.github.io/cubes/',
+        'https://aliitani.github.io/parallax-scrolling/',
+        'https://aliitani.github.io/auto-type-writer-js/'
+    ];
     window.open(links[url], '_blank').focus();
 }
