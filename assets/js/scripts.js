@@ -15,7 +15,7 @@ function openProjects(url){
         'https://aliitani.github.io/cubes/',
         'https://aliitani.github.io/parallax-scrolling/',
         'https://aliitani.github.io/auto-type-writer-js/',
-        'https://github.com/aliitani/fire-doc',
+        'https://ng-doc.web.app/',
     ];
     window.open(links[url], '_blank').focus();
 }
